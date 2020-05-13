@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
 
-    $('.main-menu .arrow').click(function(){
+    $('.nav .arrow').click(function(){
         $(this).toggleClass('rotate');
         $(this).next().slideToggle();
     });
+
     $('.hamburger').click(function () {
         $('.main-menu').toggleClass('open');
         $('html').toggleClass('page-noscroll');

@@ -923,12 +923,22 @@ h2,.h2{
 
   position: relative;
 
+  &.bg-blue{
+    padding: 55px 0 45px;
+    @media (max-width:1200px){
+        padding: 35px 0 25px;
+    }
+  }
+
   img{
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
+    @media (max-width:1200px){
+      display: none;
+    }
   }
   .feedback-block{
     max-width: 680px;
@@ -967,6 +977,9 @@ h2,.h2{
     font-size: 14px;
     color: rgba(86, 108, 131, 0.8);
     padding-left: 20px;
+    @media (max-width:767px){
+        height: 40px;
+    }
 
     &::-webkit-input-placeholder{
       font-family: @ZonaPro-Light_300;
@@ -1032,10 +1045,23 @@ h2,.h2{
   .ai-center{
     .ai-center();
     max-width: 580px;
+
+    >div{
+      @media (max-width:575px){
+          margin-bottom: 10px;
+      }
+    }
   }
 
   .btn-default{
     max-width: 332px;
+    @media (max-width:575px){
+      max-width: 100%;
+    }
+    &:hover,&:focus{
+      background: @color_text;
+      color: #fff;
+    }
   }
 }
 
@@ -1050,7 +1076,7 @@ h2,.h2{
     -webkit-order:2;
     width: 100%;
     position: absolute;
-    top: 100%;
+    top: 88%;
     background: none;
     height: 25px;
     font-size: 12px;
@@ -1096,4 +1122,205 @@ h2,.h2{
   }
 }
 
+
+
+footer{
+  color: #fff;
+  background: #566C83;
+  padding: 50px 0 40px;
+  @media (max-width:1200px){
+    padding: 30px 0 20px;
+  }
+  .footer-text{
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    max-width: 243px;
+  }
+
+  .footer-row{
+    .flex();
+    .wrap();
+    .footer-row_col{
+      width: 25%;
+    @media (max-width:1200px){
+        width: 50%;
+    }
+      @media (max-width:767px){
+          width: 100%;
+      }
+    }
+  }
+
+  .footer-logo{
+    margin-bottom: 30px;
+  }
+  .location{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer-contacts{
+    padding-left: 0;
+    li{
+      margin-bottom: 25px;
+      list-style: none;
+      padding-left: 0;
+      @media (max-width:1200px){
+        margin-bottom: 15px;
+      }
+      a{
+        font-family: @ZonaPro-Bold;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover,&:focus{
+          text-decoration: none;
+          color: @color_blue;
+        }
+      }
+    }
+  }
+
+  .nav{
+    width: 100%;
+    >li{
+      margin-bottom: 25px;
+      @media (max-width:1200px){
+        margin-bottom: 15px;
+      }
+    }
+    li{
+      list-style: none;
+      padding-left: 0;
+      width: 100%;
+      position: relative;
+
+      &:hover{
+        .sub-menu{
+          @media (min-width:992px){
+            display: block;
+          }
+
+        }
+      }
+
+      &.has-child{
+        > a{
+          @media (min-width:992px){
+            &:after{
+              .b_a();
+              width: 11px;
+              height: 6px;
+              margin-left: 5px;
+              margin-top: 8px;
+              background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5422 0.266515L5.01424 3.80182L8.48628 0.266515C8.83527 -0.0888383 9.39903 -0.0888383 9.74802 0.266515C10.097 0.621868 10.097 1.1959 9.74802 1.55125L5.64064 5.73349C5.29165 6.08884 4.72789 6.08884 4.37889 5.73349L0.271512 1.55125C-0.0774813 1.1959 -0.0774813 0.621868 0.271512 0.266515C0.620505 -0.0797266 1.19321 -0.0888382 1.5422 0.266515Z' fill='white'/%3e%3c/svg%3e ");
+            }
+          }
+
+        }
+      }
+      .arrow{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        cursor: pointer;
+        &.rotate{
+          &:before{
+            .transform(rotateX(180deg));
+          }
+        }
+        &:before{
+          .b_a();
+          .m_a();
+          width: 11px;
+          height: 6px;
+          .transition(@transition_default);
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5422 0.266515L5.01424 3.80182L8.48628 0.266515C8.83527 -0.0888383 9.39903 -0.0888383 9.74802 0.266515C10.097 0.621868 10.097 1.1959 9.74802 1.55125L5.64064 5.73349C5.29165 6.08884 4.72789 6.08884 4.37889 5.73349L0.271512 1.55125C-0.0774813 1.1959 -0.0774813 0.621868 0.271512 0.266515C0.620505 -0.0797266 1.19321 -0.0888382 1.5422 0.266515Z' fill='white'/%3e%3c/svg%3e ");
+        }
+        @media (min-width:992px){
+          display: none;
+        }
+      }
+
+      a{
+        font-family: @ZonaPro-Bold;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover,&:focus{
+          text-decoration: none;
+          color: @color_blue;
+        }
+      }
+
+      .sub-menu{
+        display: none;
+        width: 100%;
+        @media (min-width:992px){
+          position: absolute;
+          bottom: 100%;background: #fff;
+          left: 0;
+          .border-radius(5px);
+          z-index: 9;
+          .box-shadow(1px 3px 5px rgba(92, 113, 136, 0.5));
+        }
+        @media (max-width:991px){
+          padding-left: 10px;
+        }
+        li{
+          list-style: none;
+          width: 100%;
+
+          &:first-child{
+            a{
+              @media (min-width:992px){
+                .border-radius(5px 5px 0 0 );
+              }
+            }
+          }
+          &:last-child{
+            a{
+              @media (min-width:992px){
+                .border-radius(0 0 5px 5px);
+              }
+            }
+          }
+
+          a{
+            font-family: @ZonaPro-SemiBold_600;
+            width: 100%;
+            text-decoration: none;
+            color: @color_text;
+            padding: 10px 10px;
+            display: inline-block;
+            @media (max-width:991px){
+              color: #fff;
+              padding: 5px 10px;
+            }
+            &:hover,&:focus{
+              @media (min-width:992px){
+                background:#EFF6FC;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.copyright{
+  background: #46596C;
+  min-height: 45px;
+  .flex();
+  .ai-center();
+  .j-center();
+  padding: 10px;
+ font-family: @ZonaPro-Light_300;
+  font-size: 14px;
+  color: #FFFFFF;
+}
 
