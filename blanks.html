@@ -32,7 +32,7 @@
                   </ul>
                 </li>
                 <li><a href="#">Контакты</a></li>
-                <li><a class="order-call" href="#">Заказать</a></li>
+                <li><a class="order-call" href="#order-call" data-toggle="modal">Заказать</a></li>
               </ul>
             </div>
           </div>
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div class="order-btn-block">
-            <button class="btn-default blue" data-toggle="modal" data-target="order-modal">Заказать</button>
+            <button class="btn-default blue" data-toggle="modal" data-target="#order-call">Заказать</button>
           </div>
         </div>
       </div>
@@ -182,6 +182,64 @@
       </div>
     </footer>
     <section class="copyright">© 2015 - 2020, druk.by.</section>
+    <div class="modal" id="order-call">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal"></button>
+            <div class="main-feedback">
+              <div class="container"><img src="img/Business_Card_Hand.png"/>
+                <div class="feedback-block">
+                  <div class="title">ОСТАВЬТЕ ЗАЯВКУ</div>
+                  <div class="sub-title">И наши сотруднки свяжутся с Вами в ближайшее время!</div>
+                  <div class="feedback-form">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
+                        <input class="form-control" type="text" placeholder="Имя"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
+                        <input class="form-control" type="text" placeholder="Телефон"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
+                        <input class="form-control" type="text" placeholder="Фамилия"/>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
+                        <input class="form-control" type="text" placeholder="E-mail"/>
+                      </div>
+                      <div class="col-12 field">
+                        <textarea class="form-control" placeholder="Комментарий"></textarea>
+                      </div>
+                      <div class="col-12 field">
+                        <div class="row ai-center">
+                          <div class="col-12 col-md-4">
+                            <input class="file" type="file"/>
+                          </div>
+                          <div class="col-12 col-md-4"><a href="#">Требования к макетам</a></div>
+                          <div class="col-12 col-md-4">
+                            <div class="select">
+                              <select class="form-control">
+                                <option>Бланки 1</option>
+                                <option>Бланки 2</option>
+                                <option>Бланки 3</option>
+                                <option>Бланки 4</option>
+                                <option>Бланки 5</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 field">
+                        <button class="btn-default blue">Отправить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="js/mixitup.min.js"></script>
