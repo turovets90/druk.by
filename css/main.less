@@ -657,7 +657,7 @@ header{
 
 .grid-controls{
   background: #E3ECF3;
-  .box-shadow(-9px 0 20px rgba(255, 255, 255, 0.6));
+  .box-shadow(3px 5px 7px rgba(92, 113, 136, 0.5));
   .border-radius(3px);
   .flex();
   .ai-center();
@@ -726,7 +726,7 @@ header{
 }
 
 
-h2,.h2{
+h1, .h1, h2,.h2{
   font-family:@ZonaPro-Bold;
   font-size: 40px;
   line-height: 47px;
@@ -1324,3 +1324,67 @@ footer{
   color: #FFFFFF;
 }
 
+
+.page-text{
+  padding: 30px 0;
+  font-family: @ZonaPro-Light_300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3B3B3B;
+}
+
+
+.page-content{
+  padding-top: 30px;
+}
+
+.breadcrumb{
+  background: none;
+  padding: 0;
+  padding-bottom: 20px;
+  li{
+    &:first-child{
+      a{
+        padding-left: 23px;
+        &:before{
+          .b_a();
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 15px;
+          height: 13px;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='13' viewBox='0 0 15 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.48635 12.2195V8.31672H8.5298V12.2195C8.5298 12.6488 8.87219 13 9.29067 13H11.5733C11.9917 13 12.3341 12.6488 12.3341 12.2195V6.75563H13.6276C13.9776 6.75563 14.145 6.31072 13.8787 6.07655L7.51785 0.199039C7.22873 -0.0663464 6.78742 -0.0663464 6.4983 0.199039L0.137478 6.07655C-0.121215 6.31072 0.0385658 6.75563 0.388563 6.75563H1.68203V12.2195C1.68203 12.6488 2.02442 13 2.44289 13H4.72548C5.14396 13 5.48635 12.6488 5.48635 12.2195Z' fill='%235C7188'/%3e%3c/svg%3e ");
+        }
+      }
+    }
+    +li{
+      a{
+        &:before{
+          .b_a();
+          left: -3px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 7px;
+          height: 11px;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='7' height='11' viewBox='0 0 7 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.27628 9.31432L3.81159 5.49508L0.27628 1.67584C-0.0790726 1.29195 -0.0790726 0.671812 0.27628 0.287919C0.631633 -0.0959732 1.20567 -0.0959732 1.56102 0.287919L5.74325 4.80604C6.0986 5.18993 6.0986 5.81007 5.74325 6.19396L1.56102 10.7121C1.20567 11.096 0.631633 11.096 0.27628 10.7121C-0.069961 10.3282 -0.0790726 9.69821 0.27628 9.31432Z' fill='%235C7188'/%3e%3c/svg%3e ");
+        }
+      }
+
+    }
+    a{
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      color: #5C7188;
+      text-decoration: none;
+      padding: 0 17px;
+      &:hover,&:focus{
+        text-decoration: underline;
+        color: @color_blue;
+      }
+
+    }
+  }
+}
