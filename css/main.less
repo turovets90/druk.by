@@ -267,10 +267,7 @@ h1, .h1, h2,.h2{
 
 header{
   .box-shadow(0 4px 35px rgba(86, 108, 131, 0.3));
-  padding: 20px 0;
-  @media (max-width:991px){
-      padding: 10px 0;
-  }
+  padding: 5px 0;
 }
 
 @color_blue:#5C9EFF;
@@ -339,6 +336,7 @@ header{
     background: #fff;
     cursor: pointer;
     margin-bottom: 30px;
+    float: right;
 
     &:before, &:after{
       .b_a();
@@ -361,7 +359,7 @@ header{
     width: 100%;
     padding-left: 10px;
     >li{
-      width: 25%;
+      //width: 20%;
       position: relative;
       @media (max-width:991px){
           width: 100%;
@@ -417,13 +415,16 @@ header{
         display: inline-block;
         //background: #E9F0F7;
         position: relative;
-        .border-radius(35px);
+        //.border-radius(35px);
         font-family: @ZonaPro-Bold;
-        font-size: 16px;
+        font-size: 14px;
         color: @color_text;
         text-decoration: none;
         padding: 13px 25px;
         text-align: center;
+        @media (max-width:1200px){
+          padding: 13px 18px;
+        }
         @media (min-width:992px){
           width: 100%;
         }
@@ -483,7 +484,7 @@ header{
         position: absolute;
         top: 100%;background: #fff;
         left: 0;
-        .border-radius(5px);
+        //.border-radius(5px);
         z-index: 9;
         .box-shadow(1px 3px 5px rgba(92, 113, 136, 0.5));
       }
@@ -544,7 +545,7 @@ header{
       .border-radius(50%);
       position: relative;
       .box-shadow(3px 5px 7px rgba(92, 113, 136, 0.5));
-      margin-right: 20px;
+      margin-right: 15px;
       @media (max-width:991px){
           margin-right: 10px;
       }
@@ -572,10 +573,7 @@ header{
           font-size: 14px;
         }
         &:first-child{
-          margin-bottom: 15px;
-          @media (max-width:991px){
-            margin-bottom: 10px;
-          }
+          margin-bottom: 5px;
           @media (max-width:767px){
               margin-bottom: 0;
           }
@@ -597,9 +595,9 @@ header{
     .ai-center();
   }
   .header-col__left{
-    width: 19%;
+    width: 14%;
     @media (max-width:991px){
-      width: 40%;
+      width: 45%;
     }
     @media (max-width:575px){
       width: 30%;
@@ -608,7 +606,8 @@ header{
   .header-col__center{
    .flex();
     .ai-center();
-    width: 60%;
+    width: 65%;
+
     @media (max-width:991px){
       width: 10%;
     }
@@ -671,6 +670,11 @@ header{
     @media (max-width:991px){
       .wrap();
     }
+    img{
+      @media (max-width:575px){
+        max-height: 150px;
+      }
+    }
     .title{
       font-family: @ZonaPro-Bold;
       font-size: 62px;
@@ -689,7 +693,7 @@ header{
           font-size: 35px;
       }
       @media (max-width:575px){
-        font-size: 30px;
+        font-size: 20px;
       }
     }
   }
@@ -1914,5 +1918,12 @@ body{
     background: url(../img/cat-bg.png);
     background-size: cover;
     background-position: bottom;
+  }
+}
+
+
+.logo{
+  img{
+    max-height: 70px;
   }
 }
