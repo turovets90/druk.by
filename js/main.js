@@ -44,6 +44,37 @@ $(document).ready(function(){
         dragdrop: false,
     });
 
+
+
+    $(window).resize(function(){
+        var products_position = $('#products').offset().top;
+        console.log(products_position);
+        $(window).scroll(function(){
+            if($(this).scrollTop() > products_position-15){
+                $('.btn-fixed').addClass('bg_dark');
+                $('.scroll-arrow').addClass('page_up');
+            }else{
+                $('.scroll-arrow').removeClass('page_up');
+                $('.btn-fixed').removeClass('bg_dark');
+            }
+        });
+
+        $('.scroll-arrow').click(function(){
+            if($(window).scrollTop() > products_position-15){
+
+                $("html, body").animate({ scrollTop: 0 }, 1000);
+                return false;
+            }else{
+
+                $('html,body').animate( { scrollTop: products_position }, 1000 );
+                return false;
+            }
+        });
+
+    });
+    $(window).resize();
+
+
 });
 
 
