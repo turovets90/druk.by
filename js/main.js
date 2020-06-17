@@ -61,7 +61,6 @@ $(document).ready(function(){
 
         $('.scroll-arrow').click(function(){
             if($(window).scrollTop() > products_position-15){
-
                 $("html, body").animate({ scrollTop: 0 }, 1000);
                 return false;
             }else{
