@@ -9,17 +9,14 @@ $(document).ready(function(){
     $('.hamburger').click(function () {
         $('.main-menu').toggleClass('open');
         $('html').toggleClass('page-noscroll');
-
-        $('.main-menu .mm-close').click(function () {
-            $('.main-menu').removeClass('open');
-            $('html').removeClass('page-noscroll');
-        });
+        $(this).toggleClass('act');
         return false;
     });
     $(document).on('click', function(e) {
         if (!$(e.target).closest(".main-menu.open").length) {
             $(".main-menu.open").removeClass('open');
             $("html").removeClass('page-noscroll');
+            $('.hamburger').removeClass('act');
         }
         e.stopPropagation();
     });
