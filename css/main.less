@@ -408,9 +408,9 @@ header{
         }
       }
       &.has-child{
-        padding-right: 20px;
         > a{
           @media (min-width:992px){
+            padding-right: 50px;
             &:hover{
               &:after{
                 background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2.14541 0.44361L7.00626 5.15735L11.8671 0.44361C12.3557 -0.0301942 13.145 -0.0301942 13.6336 0.44361C14.1221 0.917414 14.1221 1.68279 13.6336 2.15659L7.88322 7.7329C7.39463 8.20671 6.60537 8.20671 6.11678 7.7329L0.366444 2.15659C-0.122148 1.68279 -0.122148 0.917414 0.366444 0.44361C0.855034 -0.0180452 1.65682 -0.030194 2.14541 0.44361Z' fill='%23fff'/%3e%3c/svg%3e ");
@@ -434,7 +434,7 @@ header{
         height: 30px;
         position: absolute;
         right: 0;
-        top: 5px;
+        top: 16px;
         cursor: pointer;
         &.rotate{
           &:before{
@@ -473,6 +473,7 @@ header{
         @media (max-width:991px){
             color: #fff;
           padding-left: 0;
+          font-size: 18px;
         }
 
         &:hover,&:focus{
@@ -554,7 +555,7 @@ header{
         margin-right: 25px;
       }
       @media (max-width:991px){
-        display: none;
+        //display: none;
       }
     }
     .icon{
@@ -630,7 +631,7 @@ header{
 
   >.phones{
     @media(min-width:576px){
-      display: none;
+      //display: none;
     }
   }
   .header-col__center{
@@ -655,7 +656,10 @@ header{
     @media (max-width:575px){
       width: initial;
       >.phones{
-        display: none;
+        //display: none;
+        .btn-default{
+          display: none;
+        }
       }
     }
   }
@@ -847,7 +851,7 @@ header{
     background-position: center;
     .border-radius(9px 9px 0 0 );
     @media (max-width:575px){
-        height: 200px;
+        height: 170px;
     }
   }
   .product-title{
@@ -888,6 +892,8 @@ header{
     img{
         position: absolute;
       .m_a();
+      max-width: 40px;
+      max-height: 40px;
     }
   }
   .pr-text{
@@ -1241,6 +1247,12 @@ footer{
 
   .footer-logo{
     margin-bottom: 30px;
+
+    a{
+    .flex();
+      width: 100%;
+      height: 100px;
+    }
     @media (max-width:767px){
         margin-bottom: 15px;
     }
@@ -1304,6 +1316,7 @@ footer{
       &.has-child{
         > a{
           @media (min-width:992px){
+
             &:after{
               .b_a();
               width: 11px;
@@ -2237,7 +2250,8 @@ body{
     padding: 0;
     margin: 0 3px;
     img{
-      max-height: 45px;
+      width: 45px;
+      height: 45px;
     }
   }
 }
@@ -2279,14 +2293,14 @@ body{
       &:focus{
         .icon{
           &:before{
-            background-position: -10px -79px;
+            background-position: -10px -10px;
           }
         }
       }
       .icon{
         &:before{
           width: 50px; height: 38px;
-          background-position:  -80px -79px;
+          background-position: -80px -10px;
         }
       }
 
@@ -2296,14 +2310,14 @@ body{
       &:focus{
         .icon{
           &:before{
-            background-position:-10px -10px;
+            background-position:-150px -10px;
           }
         }
       }
       .icon{
         &:before{
-          width: 50px; height: 49px;
-          background-position: -80px -10px;
+          width: 40px; height: 39px;
+          background-position:  -10px -122px;
         }
       }
 
@@ -2312,14 +2326,14 @@ body{
       &:focus{
         .icon{
           &:before{
-            background-position: -150px -10px;
+            background-position: -10px -68px;
           }
         }
       }
       .icon{
         &:before{
-          width: 50px; height: 33px;
-          background-position: -150px -63px;
+          width: 50px; height: 34px;
+          background-position: -80px -68px;
         }
       }
 

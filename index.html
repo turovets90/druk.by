@@ -18,10 +18,6 @@
           <div class="header-col__left">
             <div class="logo"><a href="#"><img src="img/masterprint_logo_RGB.png"/></a></div>
           </div>
-          <div class="phones">
-            <button class="btn-default blue" data-target="#order-call" data-toggle="modal">Заказать</button>
-            <div class="links"><a href="tel:+375 44 111  11 11">+375 44 111  11 11</a><a href="tel:+375 44 111  11 11">+375 44 111  11 11</a></div>
-          </div>
           <div class="header-col__center">
             <div class="main-menu">
               <ul class="nav">
@@ -38,7 +34,6 @@
                 <li><a href="#">Оплата и доставка</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
-              <!--button.btn-default.blue(data-target="#order-call" data-toggle="modal") Заказать-->
               <div class="main-menu__mobile_links"><a class="order" href="#order-call" data-toggle="modal">
                   <div class="icon"></div><span>Заказать</span></a><a class="phone" href="tel:+375 44 111 11 11">
                   <div class="icon"></div><span>Позвонить</span></a><a class="email" href="mailto:avtobel@mail.ru">
@@ -167,30 +162,26 @@
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-xl-3">
             <div class="pr-item">
-              <picture><img src="img/pr_1.svg"/>
-              </picture>
-              <div class="pr-text">Преимущества нашей компании</div>
+              <picture><img src="img/pr_1.png"/></picture>
+              <div class="pr-text">Короткие сроки изготовления</div>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-xl-3">
             <div class="pr-item">
-              <picture><img src="img/pr_2.svg"/>
-              </picture>
-              <div class="pr-text">Гарантия отличного качества всей продукции</div>
+              <picture><img src="img/pr_2.png"/></picture>
+              <div class="pr-text">Гарантия отличного качества</div>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-xl-3">
             <div class="pr-item">
-              <picture><img src="img/pr_1.svg"/>
-              </picture>
+              <picture><img src="img/pr_3.png"/></picture>
               <div class="pr-text">Система скидок для постоянных клиентов</div>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-xl-3">
             <div class="pr-item">
-              <picture><img src="img/pr_2.svg"/>
-              </picture>
-              <div class="pr-text">Гарантия отличного качества всей продукции</div>
+              <picture><img src="img/pr_4.png"/></picture>
+              <div class="pr-text">Наличный и безналичный расчет</div>
             </div>
           </div>
         </div>
@@ -210,7 +201,7 @@
         <div class="desc">
           <div class="h2">О нас</div>
           <P>Помимо выполнения всего вида работ в сфере полиграфических услуг организация взяла на себя функции рекламного агентства: собственная дизайн-студия, конструкторское бюро по разработке упаковки, сильная печатная и послепечатная база. Любая идея заказчика разрабатывается «с нуля», с учетом философии каждой организации.</P><img class="img1" src="img/main-about.png"/>
-          <p class="mb-4 pb-2">Особенностью типографии является возможность реализовывать нестандартную продукцию. Мощная производственная база включает в себя высокопроизводительное оборудование.  Мы выполняем все виды современной отделки: тиснение, фольгирование, каширование, вырубка любых форм, фальцесклейка и т. д.</p><a class="btn-default blue" href="#">Подробнее</a>
+          <p class="mb-4 pb-2">Особенностью типографии является возможность реализовывать нестандартную продукцию. Мощная производственная база включает в себя высокопроизводительное оборудование.  Мы выполняем все виды современной отделки: тиснение, фольгирование, каширование, вырубка любых форм, фальцесклейка и т. д.</p>
         </div><img class="img2" src="img/main-about.png"/>
       </div>
     </section>
@@ -219,19 +210,19 @@
         <div class="feedback-block">
           <div class="title text-uppercase">Просчитать стоимость</div>
           <div class="sub-title">И наши сотруднки свяжутся с Вами в ближайшее время!</div>
-          <div class="feedback-form">
+          <form class="feedback-form">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
-                <input class="form-control" type="text" placeholder="Имя"/>
+                <input class="form-control" type="text" placeholder="Имя *" required="required"/>
               </div>
               <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
-                <input class="form-control" type="text" placeholder="Телефон"/>
+                <input class="form-control" type="text" placeholder="Телефон *" required="required"/>
               </div>
               <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
                 <input class="form-control" type="text" placeholder="Фамилия"/>
               </div>
               <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
-                <input class="form-control" type="text" placeholder="E-mail"/>
+                <input class="form-control" type="text" placeholder="E-mail *" required="required"/>
               </div>
               <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
                 <textarea class="form-control" placeholder="Комментарий"></textarea>
@@ -277,7 +268,7 @@
                 <button class="btn-default">Отправить</button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -319,11 +310,11 @@
           </div>
           <div class="footer-row_col">
             <div>
-              <div class="footer-logo"><a href="#"><img src="img/footer-logo1.svg"/></a></div>
+              <div class="footer-logo"><a href="#"><img src="img/mp_logo_white.svg"/></a></div>
               <div class="row">
                 <div class="col-12 col-sm-12 col-md-3">
                   <ul class="social-menu">
-                    <li><a href="#"><img src="img/1562139.svg"/></a></li>
+                    <li><a href="#"><img src="img/mp_logo_inst_white.svg"/></a></li>
                   </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-9">
@@ -352,19 +343,19 @@
                 <div class="feedback-block">
                   <div class="title text-uppercase">Просчитать стоимость</div>
                   <div class="sub-title">И наши сотруднки свяжутся с Вами в ближайшее время!</div>
-                  <div class="feedback-form">
+                  <form class="feedback-form">
                     <div class="row">
                       <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
-                        <input class="form-control" type="text" placeholder="Имя"/>
+                        <input class="form-control" type="text" placeholder="Имя *" required="required"/>
                       </div>
                       <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
-                        <input class="form-control" type="text" placeholder="Телефон"/>
+                        <input class="form-control" type="text" placeholder="Телефон *" required="required"/>
                       </div>
                       <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
                         <input class="form-control" type="text" placeholder="Фамилия"/>
                       </div>
                       <div class="col-12 col-sm-12 col-md-6 col-xl-6 field">
-                        <input class="form-control" type="text" placeholder="E-mail"/>
+                        <input class="form-control" type="text" placeholder="E-mail *" required="required"/>
                       </div>
                       <div class="col-12 field">
                         <textarea class="form-control" placeholder="Комментарий"></textarea>
@@ -392,7 +383,7 @@
                         <button class="btn-default blue">Отправить</button>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
