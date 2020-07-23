@@ -41,6 +41,10 @@ $(document).ready(function(){
         dragdrop: false,
     });
 
+    $('.table .td').hover(function() {
+        $('.table .tr').find('.td:eq('+$(this).index()+')').toggleClass('hover');
+    });
+
 
 
     $(window).resize(function(){
