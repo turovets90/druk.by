@@ -1572,6 +1572,10 @@ footer{
 
 
 .tab-content{
+  .table-block{
+    display: block;
+    overflow: auto;
+  }
   .table{
     width: 100%;
     border: 1px solid rgba(86, 108, 131, 0.2);
@@ -1579,6 +1583,7 @@ footer{
     .wrap();
     .border-radius(9px);
     overflow: auto;
+    min-width: 600px;
 
 
     .tr:hover td {
@@ -1620,11 +1625,7 @@ footer{
       }
 
       @media (max-width:767px){
-        width: 50%;
-        border-top: 0;
-        +.tr{
-          border-left: 1px solid rgba(86, 108, 131, 0.2);
-        }
+
       }
       &:first-child{
         border-top:0;
@@ -1668,8 +1669,6 @@ footer{
           }
         }
         @media (max-width:767px){
-          width: 100%;
-          border-right: 0;
           border-bottom: 1px solid rgba(86, 108, 131, 0.2);
           min-height: 30px;
           &:last-child{
