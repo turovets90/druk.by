@@ -1579,11 +1579,17 @@ footer{
   .table{
     width: 100%;
     border: 1px solid rgba(86, 108, 131, 0.2);
+    background: #fff;
     .flex();
     .wrap();
     .border-radius(9px);
     overflow: auto;
     min-width: 600px;
+    @media (max-width:575px){
+      *{
+        font-size: 13px;
+      }
+    }
 
 
     .tr:hover td {
@@ -1609,7 +1615,7 @@ footer{
         //.td{
 
         @media (min-width:768px){
-          background: rgba(0, 144, 240, 0.5);
+          background: rgba(0, 144, 240, 0.3);
           .td{
             &:first-child{
               color: #fff;
@@ -1647,7 +1653,7 @@ footer{
         }
         &.hover{
           @media (min-width:768px){
-            background: rgba(0, 144, 240, 0.5);
+            background: rgba(0, 144, 240, 0.3);
             color: #fff;
           }
         }
